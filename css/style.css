@@ -135,6 +135,30 @@ a {
   text-decoration: none;
 }
 
+.email-section {
+  background-color: red;
+  padding: 20px;
+}
+
+.email-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  border: 1px solid black;
+  width: 100%;
+  height: 2.5rem;
+  padding: 5px;
+  min-width: 300px;
+}
+
+.subscribe {
+  width: 100%;
+  text-align: center;
+}
+
 @media (max-width: 600px) {
   .nav-links {
     display: block;
@@ -142,6 +166,16 @@ a {
   }
 
   i {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .email-content {
+    display: block;
+  }
+
+  input {
     margin-top: 10px;
   }
 }

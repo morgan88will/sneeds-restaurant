@@ -47,6 +47,22 @@
   border: 2px solid white;
 }
 
+.btn-dark {
+  border: 2px solid black;
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 15px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+  background-color: white;
+  color: black;
+}
+
 .text-shadow {
   text-shadow: 0 0 10px #000;
 }
@@ -81,4 +97,8 @@
 
 .floralwhite {
   color: floralwhite;
+}
+
+.display-block {
+  display: block;
 }
