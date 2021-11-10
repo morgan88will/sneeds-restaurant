@@ -79,7 +79,11 @@ body {
   width: 50%;
 }
 
-i:hover {
+.navbar i {
+  margin-right: 4px;
+}
+
+.footer i:hover {
   color: red;
 }
 
@@ -169,7 +173,7 @@ input {
     text-align: center;
   }
 
-  i {
+  .footer i {
     margin-top: 10px;
   }
 }
