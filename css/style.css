@@ -127,7 +127,11 @@ li {
   align-items: center;
 }
 
-.abt-pgh {
+.about {
+  display: flex;
+}
+
+.about-pgh {
   max-width: 600px;
 }
 
@@ -175,7 +179,16 @@ input {
     display: block;
   }
 
+  .about {
+    display: block;
+  }
+
+  .extra-pgh {
+    margin-top: 1rem;
+  }
+
   input {
     margin-top: 10px;
+    min-width: 0px;
   }
 }
