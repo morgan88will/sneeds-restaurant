@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  font-family: Tahoma;
+}
+body {
+  position: relative;
+}
+
+.main-header {
+  color: white;
+}
+
+.logo {
+  color: white;
+  border: 3px solid white;
+  padding: 5px;
+  font-family: "Arvo";
+  font-size: 2rem;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.navbar {
+  background-color: black;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.nav-item {
+  padding: 10px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.margin-auto {
+  margin: 0 auto;
+  width: 50%;
+}
+
+i:hover {
+  color: red;
+}
+
+li {
+  list-style-type: none;
+}
+
+.main {
+  background-image: url("../images/main-image.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+}
+
+.advert {
+  background-image: url("../images/oysters.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+}
+
+.content {
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+  margin-top: 350px;
+}
+
+.about-section {
+  padding: 30px;
+  background-color: ghostwhite;
+}
+
+.footer {
+  background-color: black;
+  padding: 30px;
+}
+
+.footer-header {
+  color: red;
+}
+
+.connect {
+  display: flex;
+  align-items: center;
+}
+
+.abt-pgh {
+  max-width: 600px;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    display: block;
+    text-align: center;
+  }
+
+  i {
+    margin-top: 10px;
+  }
+}
